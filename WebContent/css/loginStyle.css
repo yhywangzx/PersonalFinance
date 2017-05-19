@@ -1,0 +1,55 @@
+@CHARSET "UTF-8";
+a{
+	color:black;
+	text-decoration: none;
+}
+#log_body{
+	margin: 0px;
+	background-image: url("../images/bg1431.jpg");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	background-attachment: fixed;	
+}
+#log_all{
+	text-align: center;
+	padding-left: 350px;
+}
+.login_item{
+	float: left;
+	margin-top:150px;
+	margin-left:50px; 
+}
+.login_btn{
+	float: left;
+	margin-top: 150px;
+}
+.login_btn input{
+	width: 50px;
+	height:25px;
+	margin-left: 10px;
+	background: none;
+	border: 1px solid #6B7DAD;
+	cursor: pointer;
+}
+.login_btn a{
+	font-size:11pt;
+	padding:2px 10px;
+	background: none;
+	border: 1px solid #6B7DAD;
+	cursor: pointer;
+	color: black;
+}
+
+
+.login_item input{
+	margin-left: 10px;
+	background: none;
+	border-width: 1px;
+	border: 1px solid #6B7DAD;
+}
+.clear{
+	clear: both;
+}
+.toRegister{
+	margin-top: 20px;
+}

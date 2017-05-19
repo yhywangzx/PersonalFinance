@@ -1,0 +1,85 @@
+@CHARSET "UTF-8";
+
+#body_news {
+	
+	padding-top: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin: 0px;
+	background-image: url("../images/bgacc.png");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	background-attachment: fixed;
+}
+
+#all {
+	width: 100%;
+}
+#title{
+	height:50px;
+	padding-top:10px;
+	background-color: #6DA1D3;
+	font-size: 30px;
+	letter-spacing: 5px;
+	margin-bottom: 5px;
+}
+
+
+#author{
+	background-color: #326698;
+	height: 25px;
+	margin-top: 20px;
+}
+#author span{
+	margin: 2px 10px;
+	}
+#news{
+	text-align: center;
+}
+#content{
+	height:350px;
+	background-color: #89BDEF;
+	margin-bottom: 20px;
+	text-align: left;
+	font-size: 20px;
+	padding: 15px;
+}
+#content span{
+	letter-spacing: 2em;
+}
+#content div{
+	float:right;
+	padding-right: 5px;
+}
+
+#comment .com_d1{
+	background-color: #EEEEEE;
+	margin-top: 20px;
+	padding-left: 10px;
+}
+#comment .com_d2{
+	margin-top:2px;
+	padding-left:20px;
+	background-color:#FDF5AE;
+}
+#reply{
+	margin-top:10px;
+	padding-left:15px;
+	background-color: #EEEEEE;
+}
+#reply .input1{
+	width:700px;
+	margin-left: 5px;
+	background-color: #FEF8B6;
+}
+#reply .input2{
+	width:100px;
+}
+hr{
+	height:3px;
+	background-color:blue;
+	border: 0;
+}
+.warning{
+	width:100px;
+}

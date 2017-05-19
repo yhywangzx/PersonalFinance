@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+ 	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--等价于dao接口的实现 namespace必须和接口的类路径一样 -->
+<mapper namespace="com.iflytek.fin.dao.FinanceDao">
+	<resultMap type="Finance" id="FinanceResultMap">
+		<id property="id" column="id" />
+		<result property="detail" column="detail" />
+		<result property="money" column="money" />
+		<result property="time" column="time" />
+		<result property="categoryId" column="categoryId" />
+		<result property="userId" column="userId" />
+		<result property="cname" column="cname" />
+		<result property="classify" column="classify" />
+	</resultMap>
+	<!-- id必须和接口中的方法名一样 --> 
+	<insert id="add" parameterType="Finance">
+		<![CDATA[ 
+             insert into finance(detail,money,time,categoryId,userId) values(#{detail},#{money},#{time},#{categoryId},#{userId})
+        ]]>
+	</insert>
+	
+ 	<delete id="delete" parameterType="int">
+		<![CDATA[ 
+             delete from finance where id = #{financeId}
+        ]]>
+	</delete>
+	<delete id="deleteByCategoryId" parameterType="int">
+		<![CDATA[ 
+             delete from finance where categoryid = #{categoryId}
+        ]]>
+	</delete>
+	<select id="geMytTotalCount" resultType="int">
+		<![CDATA[ 
+            select count(*) from finance f inner join category c on f.categoryid=c.id where f.userId = #{userId} and c.classify like "%"#{classify}"%" and (f.time between #{start} and #{end})
+        ]]>
+	</select>
+	<select id="getMyFinancePageListByCondition" resultMap="FinanceResultMap">
+		<![CDATA[ 
+            select f.*,c.name cname,c.classify classify from finance f inner join category c on f.categoryId=c.id where f.userId=#{userId} and c.classify like "%"#{classify}"%" and (f.time between #{start} and #{end}) limit #{pageIndex},#{pageSize} 
+        ]]>
+	</select>
+</mapper>

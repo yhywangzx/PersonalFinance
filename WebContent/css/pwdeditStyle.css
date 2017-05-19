@@ -1,0 +1,68 @@
+@CHARSET "UTF-8";
+a{
+	text-decoration: none;
+}
+#body{
+	padding-top: 15%;
+	padding-left: 10%;
+	padding-right: 10%;
+	margin: 0px;
+	background-image: url("../images/newsedit.png");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	background-attachment: fixed;
+}
+.clear{
+	clear: both;
+}
+#all2{
+	border: 1px solid black;
+	width: 90%;
+	padding-left: 5%;
+	border-collapse: collapse;
+	border: 0px;
+}
+#all2 div{
+	text-align:center;
+	margin: 20px 0px;
+}
+
+
+.td1 span{
+	letter-spacing: 2em;
+}
+
+.td2 span{
+	letter-spacing: 0.5em;
+}
+.td3 span{
+	color:red;
+}
+
+
+td input{
+	width:85%;
+	text-align:left;
+	margin-left:0px;
+	height:25px;
+	border: 0;
+}
+#all2 table{
+	width: 70%;
+	height:150px;
+	border-collapse: collapse;
+}
+#all2 table tr{
+	margin-top: 20px;
+}
+.btn{
+	padding-right: 65%;
+}
+.btn input{
+	width: 70px;
+	height:35px;
+	margin-right: 20px;
+	border: 1px solid #C6A973;
+}
+
+

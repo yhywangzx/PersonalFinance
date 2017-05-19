@@ -1,0 +1,162 @@
+@CHARSET "UTF-8";
+
+
+a{
+	text-decoration: none;
+	color: black;
+}
+a:HOVER{
+	color: red;
+	
+}
+#body_index{
+	margin: 0px;
+}
+#body {
+	background-image: url("../images/ihouse.jpg");
+	background-size:100% 100%;
+	background-attachment: fixed;
+	margin: 0px;
+	padding-top: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+	
+}
+#all{
+	width: 100%; 
+	margin: 0px auto;
+	font-family: 'Verdana';
+}
+ .logo{
+	width: 100%;
+	height: 40px;
+	margin-bottom: 2px;
+	background-color:#5ADBE1;
+	letter-spacing: 0.2em;
+}
+ .logo div{
+	margin-top:10px; 
+}
+
+.logo_left{
+	float:left;
+	color: black;
+	margin-left: 30px;
+	
+}
+.logo_right{
+	float: right;	
+}
+.logo_right a{
+	color: black;
+	margin-right: 30px;
+}
+.logo_right a:HOVER{
+	color: red;
+}
+#homepage{
+	float: left;
+	margin-left:15px;
+}
+#leftmenu{
+	width:210px;
+	height:650px;
+	position: absolute;
+	background: none;
+	border: 1px solid #316597;
+}
+#leftmenu ul{
+	list-style: none;
+	padding-left: 0px;
+	margin-top:10px; 
+}
+#leftmenu li{
+	margin-top: 3px;
+	background-color: #366A9C;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+#leftmenu a{
+	display: block;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-align: center;
+	color: #FEF8B6;
+}
+#leftmenu a span{
+	letter-spacing: 2em;	
+}
+#leftmenu a:hover{
+	background-color: red;
+}
+#rightmenu{
+	
+	 float: right;
+	 width:83%;
+	background:none;
+	 height: 650px;
+	 border:1px solid #316597;
+	  
+}
+#rightmenu iframe{
+	background:none;
+	width: 100%;
+	height: 100%;
+	scrolling:no;
+}
+
+#content{
+	background-color:#51B4AF;
+	width:100%;
+	height: 568px;
+	margin-top:3px;
+	padding-top: 50px;
+}
+#details{
+	border: 1px solid black;
+	margin-left: 230px;
+	margin-right: 230px;
+}
+#details table{
+	text-align: center;
+	width: 100%;
+	 border-collapse:collapse;
+}
+table .row1{
+	background-color: #77BEB6;
+	
+}
+table .row2{
+	background-color: #B6DEDD;
+	
+}
+table td{
+	padding:5px;
+}
+
+#page{
+	background-color:#51B4AF;
+	text-align: center;
+}
+#page div{
+	padding-bottom: 10px;
+}
+
+#page a{
+	
+	padding: 10px;
+}
+
+.copyright{
+	text-align: center;
+	background-color: #5ADBE1;
+	height: 30px;
+	margin-top:3px;
+	padding-top:10px; 
+	color: black;
+	letter-spacing: 0.2em;
+}
+
+.clear{
+	clear: both;
+}

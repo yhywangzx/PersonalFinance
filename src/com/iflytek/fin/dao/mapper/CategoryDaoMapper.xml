@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+ 	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--等价于dao接口的实现 namespace必须和接口的类路径一样 -->
+<mapper namespace="com.iflytek.fin.dao.CategoryDao">
+	<resultMap type="Category" id="CategoryResultMap">
+		<id property="id" column="id" />
+		<result property="name" column="name" />
+		<result property="classify" column="classify" />
+		<result property="userId" column="userId" />
+	</resultMap>
+	
+	<!-- id必须和接口中的方法名一样 --> 
+	<insert id="add" parameterType="Category">
+		<![CDATA[ 
+            insert into category(name,classify,userId)values(#{name},#{classify},#{userId})
+        ]]>
+	</insert>
+	
+	 <delete id="delete">
+		<![CDATA[ 
+             delete from category where id = #{categoryId}
+        ]]>
+	</delete>
+	
+		<select id="getCategoryList" resultMap="CategoryResultMap">
+		<![CDATA[ 
+            select * from category where userId=#{userId} and classify like "%"#{classify}"%"
+        ]]>
+	</select>
+</mapper>

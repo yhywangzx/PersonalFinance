@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration 
+ 	PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	
+	<!-- 类型别名 -->
+	<typeAliases>
+		<typeAlias alias="User" type="com.iflytek.fin.po.User" />
+		<typeAlias alias="Finance" type="com.iflytek.fin.po.Finance" />
+		<typeAlias alias="Category" type="com.iflytek.fin.po.Category" />
+	</typeAliases>
+	
+	<!-- 列出映射文件 -->
+	<mappers>
+		<mapper resource="com/iflytek/fin/dao/mapper/UserDaoMapper.xml" />
+		<mapper resource="com/iflytek/fin/dao/mapper/FinanceDaoMapper.xml" />
+		<mapper resource="com/iflytek/fin/dao/mapper/CategoryDaoMapper.xml" /> 
+	</mappers>
+</configuration>
+
+
+
+
+
